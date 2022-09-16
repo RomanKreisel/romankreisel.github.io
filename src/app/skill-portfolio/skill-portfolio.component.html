@@ -12,11 +12,14 @@
     >
   </div>
   <br />
-  <div
-    *ngIf="portfolio"
-    fxFlex="10"
-    fxLayout="row wrap"
-    fxLayoutGap="10px"
-    style="padding: 5px"
-  ></div>
+  <div *ngIf="portfolio" fxLayout="row wrap" fxLayoutGap="10px">
+    <skill-card
+      fxFlex="30"
+      fxFlex.lg="20"
+      fxFlex.sm="45"
+      fxFlex.xs="100"
+      *ngFor="let skill of portfolio"
+      [skillHelper]="getSkillHelper(skill)"
+    ></skill-card>
+  </div>
 </div>
