@@ -9,6 +9,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatCardModule } from '@angular/material/card';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { SkillCardComponent } from './skill-card/skill-card.component';
+import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [AppComponent, SkillPortfolioComponent, SkillCardComponent],
@@ -19,6 +20,7 @@ import { SkillCardComponent } from './skill-card/skill-card.component';
     MatSlideToggleModule,
     MatCardModule,
     FlexLayoutModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent],

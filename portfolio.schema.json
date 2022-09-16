@@ -9,7 +9,10 @@
     "type": "object",
     "default": {},
     "required": [
-      "title",
+      "titleEnglish",
+      "titleGerman",
+      "descriptionEnglish",
+      "descriptionGerman",
       "category",
       "importance",
       "logo",
@@ -17,16 +20,32 @@
       "selfEvaluation"
     ],
     "properties": {
-      "title": {
-        "title": "Title",
+      "titleEnglish": {
+        "title": "TitleEnglish",
+        "type": "string",
+        "default": "",
+        "examples": ["Angular"]
+      },      "titleGerman": {
+        "title": "TitleGerman",
         "type": "string",
         "default": "",
         "examples": ["Angular"]
       },
+      "descriptionEnglish": {
+        "title": "DescriptionEnglish",
+        "type": "string",
+        "default": "",
+        "examples": ["I've been born and raised in germany"]
+      },"descriptionGerman": {
+        "title": "DescriptionGerman",
+        "type": "string",
+        "default": "",
+        "examples": ["Ich bin in Deutschland geboren und aufgewachsen"]
+      },
       "category": {
         "title": "Category",
         "type": "string",
-        "enum": ["Technical", "Management"],
+        "enum": ["Technical", "Management", "Language"],
         "default": "",
         "examples": ["Technical"]
       },

@@ -26,15 +26,15 @@ export class SkillPortfolioComponent implements OnInit {
     return this.portfolioUnfiltered
       .filter((x) =>
         x.experiences
-          .filter((x) => x.business || x.business || this.includePersonal)
+          .filter((x) => x.business || x.training || this.includePersonal)
           .some((x) => x.frequency !== 'infrequently' || this.includeInfrequent)
       )
       .sort((a, b) => {
         var experienceDifference = Math.round(
-          this.getSkillHelper(a)
+          this.getSkillHelper(b)
             .totalExperience(this.includePersonal, this.includeInfrequent)
             .asYears() -
-            this.getSkillHelper(b)
+            this.getSkillHelper(a)
               .totalExperience(this.includePersonal, this.includeInfrequent)
               .asYears()
         );
@@ -45,7 +45,7 @@ export class SkillPortfolioComponent implements OnInit {
         if (importanceDifference != 0) {
           return importanceDifference;
         }
-        return a.title.localeCompare(b.title);
+        return a.titleEnglish.localeCompare(b.titleEnglish);
       });
   }
 

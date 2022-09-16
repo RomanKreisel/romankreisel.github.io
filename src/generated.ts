@@ -5,8 +5,11 @@
  * and run json-schema-to-typescript to regenerate this file.
  */
 
-export type Title = string;
-export type Category = "Technical" | "Management";
+export type TitleEnglish = string;
+export type TitleGerman = string;
+export type DescriptionEnglish = string;
+export type DescriptionGerman = string;
+export type Category = "Technical" | "Management" | "Language";
 export type Importance = number;
 export type URL = string;
 export type Logo = string;
@@ -22,7 +25,10 @@ export type SelfEvaluation = "Professional" | "Intermediate" | "Beginner";
 export type Portfolio = Skill[];
 
 export interface Skill {
-  title: Title;
+  titleEnglish: TitleEnglish;
+  titleGerman: TitleGerman;
+  descriptionEnglish: DescriptionEnglish;
+  descriptionGerman: DescriptionGerman;
   category: Category;
   importance: Importance;
   url?: URL;

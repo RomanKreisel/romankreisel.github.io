@@ -1,6 +1,151 @@
 [
   {
-    "title": "Angular",
+    "titleEnglish": "German (native)",
+    "titleGerman": "Deutsch (Muttersprache)",
+    "descriptionEnglish": "I've been born and raised in germany.",
+    "descriptionGerman": "Ich bin in Deutschland gebohren und aufgewachsen.",
+    "category": "Language",
+    "importance": 8,
+    "logo": "/assets/de-flag.png",
+    "experiences": [
+      {
+        "from": "1982-08-17",
+        "training": true,
+        "business": true,
+        "personal": true,
+        "frequency": "regularly"
+      }
+    ],
+    "selfEvaluation": "Professional"
+  },
+  {
+    "titleEnglish": "English",
+    "titleGerman": "Englisch",
+    "descriptionEnglish": "High quality results require barrier-free communication in the team.",
+    "descriptionGerman": "Um qualitativ hochwertige Resultate zu erziehlen, muss das gesamte Team barrierefrei kommunizieren können.",
+    "category": "Language",
+    "importance": 8,
+    "logo": "/assets/us-uk-flag.svg",
+    "experiences": [
+      {
+        "from": "1993-09-01",
+        "to": "1999-06-30",
+        "training": true,
+        "frequency": "regularly",
+        "comment": "English was a mandatory subject in the secondary school (Realschule)"
+      },
+      {
+        "from": "1999-09-01",
+        "to": "2002-07-31",
+        "training": true,
+        "business": true,
+        "frequency": "regularly",
+        "comment": "English was trained during vocational school (Berufschule) and I was able to use it on regular basis during my training in the company"
+      },
+      {
+        "from": "2005-03-01",
+        "to": "2009-02-27",
+        "training": true,
+        "business": true,
+        "frequency": "regularly",
+        "comment": "\"Technical english\" was a mandatory subject in the university, some lectures were given in english and it was also used during the internships"
+      },
+      {
+        "from": "2009-07-01",
+        "business": true,
+        "frequency": "regularly",
+        "comment": "I've been working in international teams since 2012. From this time on, communicating in english (written and spoken) is an everyday task of my work."
+      }
+    ],
+    "selfEvaluation": "Professional"
+  },
+  {
+    "titleEnglish": "French",
+    "titleGerman": "Französisch",
+    "descriptionEnglish": "Fortunately, my french skill were only scarcely required during software development.",
+    "descriptionGerman": "Glücklicherweise wurden meine französischkenntnisse für die Softwareentwicklung bisher kaum benötigt.",
+    "category": "Language",
+    "importance": 2,
+    "logo": "/assets/fr-flag.svg",
+    "experiences": [
+      {
+        "from": "1995-09-01",
+        "to": "1999-06-30",
+        "training": true,
+        "personal": true,
+        "frequency": "regularly"
+      }
+    ],
+    "selfEvaluation": "Beginner"
+  },
+  {
+    "titleEnglish": "Windows",
+    "titleGerman": "Windows",
+    "descriptionEnglish": "I've literally seen every windows version since Windows 3.1.",
+    "descriptionGerman": "Seit Windows 3.1 habe ich jede Windows Version gesehen.",
+    "category": "Technical",
+    "importance": 5,
+    "url": "https://en.wikipedia.org/wiki/Microsoft_Windows",
+    "logo": "/assets/windows-311.webp",
+    "experiences": [
+      {
+        "from": "1995-01-01",
+        "business": true,
+        "personal": true,
+        "frequency": "regularly"
+      }
+    ],
+    "selfEvaluation": "Professional"
+  },
+  {
+    "titleEnglish": "Linux",
+    "titleGerman": "Linux",
+    "descriptionEnglish": "My passion for Linux started with SuSE Linux 7.1, I've been using it professionally and personally ever since.",
+    "descriptionGerman": "Meine Vorliebe für Linux hat mit SuSE Linux 7.1 begonnen, seither verwende ich es professionell und privat.",
+    "category": "Technical",
+    "importance": 8,
+    "url": "https://en.wikipedia.org/wiki/Linux",
+    "logo": "/assets/tux.png",
+    "experiences": [
+      {
+        "from": "2001-06-01",
+        "to": "2003-08-31",
+        "business": false,
+        "personal": true,
+        "training": false,
+        "frequency": "regularly"
+      },
+      {
+        "from": "2003-09-01",
+        "to": "2005-02-28",
+        "business": true,
+        "personal": true,
+        "training": false,
+        "frequency": "regularly"
+      },
+      {
+        "from": "2005-03-01",
+        "to": "2006-12-31",
+        "business": false,
+        "personal": true,
+        "training": true,
+        "frequency": "regularly"
+      },
+      {
+        "from": "2006-01-01",
+        "business": true,
+        "personal": true,
+        "training": false,
+        "frequency": "regularly"
+      }
+    ],
+    "selfEvaluation": "Professional"
+  },
+  {
+    "titleEnglish": "Angular",
+    "titleGerman": "Angular",
+    "descriptionEnglish": "I prefer SinglePageApps over MVC and Angular over React and Vue for most scenarios",
+    "descriptionGerman": "Ich bevorzuge Single Page Apps vor MVC und Angular vor React und Vue für die meisten Anforderungen.",
     "category": "Technical",
     "importance": 7,
     "url": "https://angular.io",
@@ -10,13 +155,30 @@
         "from": "2015-01-01",
         "to": "2017-12-31",
         "business": true,
-        "frequency": "regularly"
+        "frequency": "regularly",
+        "comment": "When replacing the UI of an old Apache Tapestry MVC UI, we decided to go with \"Angular 2\" which was still in beta back then. The project was a big success and we never had any regrets."
+      },
+      {
+        "from": "2018-09-16",
+        "to": "2020-06-08",
+        "personal": true,
+        "frequency": "occasionally",
+        "comment": "I used Angular in a personal project called <a href=\"https://github.com/RomanKreisel/FistOfFive\">Fist of Five</a>."
+      },
+      {
+        "from": "2022-03-01",
+        "business": true,
+        "frequency": "regularly",
+        "comment": "When developing a new application for manufacturing assistance, we devided to go with Angular 13."
       }
     ],
     "selfEvaluation": "Professional"
   },
   {
-    "title": "C#",
+    "titleEnglish": "C#",
+    "titleGerman": "C#",
+    "descriptionEnglish": "While I was focusing Java in the beginning of my career, the ongoing evolution of C# and the decision of MS to support Linux as platform lead me here.",
+    "descriptionGerman": "Zu Beginn meiner Karriere habe ich mich auf Java fokussiert, jedoch hat mich die stetig anhaltende Evolution von C# und Microsoft's Entscheidung auch Linux als Plattform zu akzeptieren hierher geführt.",
     "category": "Technical",
     "importance": 8,
     "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
@@ -37,7 +199,10 @@
     "selfEvaluation": "Professional"
   },
   {
-    "title": "Terraform",
+    "titleEnglish": "Terraform",
+    "titleGerman": "Terraform",
+    "descriptionEnglish": "Infrastucture as code is mandatory for professional cloud projects. It doesn't only increase development velocity, but also ensures stable deployments to production and high maintainability if some key subjects leave the project.",
+    "descriptionGerman": "Infrastructure-as-code ist für professionelle Cloud Projekte zwingend erforderlich. Es beschleunigt nicht nur die Entwicklung, sondern stellt auch zuverlässige Rollouts sicher und erhält die Wartbarkeit wenn einige Key Player das Projekt verlassen.",
     "category": "Technical",
     "importance": 3,
     "url": "https://www.terraform.io",

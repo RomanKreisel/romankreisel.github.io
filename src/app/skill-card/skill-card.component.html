@@ -6,9 +6,11 @@
     <div mat-card-avatar class="skill-logo-avatar">
       <img mat-card-avatar [src]="skill.logo" />
     </div>
-    <mat-card-title class="text-ellipsis">{{ skill.title }}</mat-card-title>
+    <mat-card-title class="text-ellipsis">{{ skillHelper.title }}</mat-card-title>
     <mat-card-subtitle class="text-ellipsis"
-      >Experience: ~{{
+      >
+      {{skill.selfEvaluation}}<br/>
+      Experience: ~{{
         skillHelper.totalExperienceHumanized()
       }}</mat-card-subtitle
     >
@@ -16,16 +18,7 @@
 
   <mat-card-content>
     <div class="text-multiline-ellipsis">
-      This is some sample text, preferable across multiple lines. Lorem ipsum
-      dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-      invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
-      vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-      gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-      ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-      amet.
+      {{ skillHelper.description }}
     </div>
   </mat-card-content>
 </mat-card>

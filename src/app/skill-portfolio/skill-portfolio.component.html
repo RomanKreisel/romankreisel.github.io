@@ -20,6 +20,8 @@
       fxFlex.xs="100"
       *ngFor="let skill of portfolio"
       [skillHelper]="getSkillHelper(skill)"
+      [includePersonal]="includePersonal"
+      [includeInfrequent]="includeInfrequent"
     ></skill-card>
   </div>
 </div>

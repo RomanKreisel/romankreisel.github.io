@@ -5,13 +5,13 @@ import * as relativeTime from 'dayjs/plugin/relativeTime';
 import * as dayjsLocales from 'dayjs/locale/*';
 
 export class SkillHelper {
-  constructor(public skill: Skill) {}
+  constructor(public skill: Skill, private language = 'en') {}
 
   get skillNameForElementId(): string {
-    return encodeURI(this.skill.title).toLowerCase();
+    return encodeURI(this.skill.titleEnglish).toLowerCase();
   }
 
-  totalExperience(includePersonal = false, includeInfrequent = false) {
+  totalExperience(includePersonal = true, includeInfrequent = true) {
     let totalDays = 0;
     for (let experience of this.skill.experiences) {
       if (!includePersonal && !experience.business && !experience.training) {
@@ -31,9 +31,23 @@ export class SkillHelper {
     return dayjs.duration({ days: totalDays });
   }
 
-  totalExperienceHumanized(includePersonal = false, includeInfrequent = false) {
+  totalExperienceHumanized(includePersonal = true, includeInfrequent = true) {
     return this.totalExperience(includePersonal, includeInfrequent).humanize(
       false
     );
+  }
+
+  get title(){
+    if(this.language.startsWith('de')){
+      return this.skill.titleGerman;
+    }
+    return this.skill.titleEnglish;
+  }
+
+    get description(){
+    if(this.language.startsWith('de')){
+      return this.skill.descriptionGerman;
+    }
+    return this.skill.descriptionEnglish;
   }
 }

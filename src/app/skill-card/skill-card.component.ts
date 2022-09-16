@@ -9,6 +9,8 @@ import { SkillHelper } from '../skill-helper';
 })
 export class SkillCardComponent implements OnInit {
   @Input('skillHelper') skillHelper!: SkillHelper;
+  @Input('includePersonal') includePersonal: boolean = true;
+  @Input('includeInfrequent') includeInfrequent: boolean= true;
 
   constructor() {}
 
