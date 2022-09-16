@@ -1,0 +1,10 @@
+.language-selection {
+  cursor: pointer;
+  opacity: 0.1;
+  transition: opacity 0.3s ease-in;
+  height: 25px;
+}
+
+.selected {
+  opacity: 1 !important;
+}

@@ -3,7 +3,7 @@
     <mat-slide-toggle
       (change)="includePersonal = !includePersonal"
       [checked]="includePersonal"
-      >Include experience from personal projects</mat-slide-toggle
+      >{{"skill-portfolio.includePersonalExperience" | translate}}</mat-slide-toggle
     >
     <mat-slide-toggle
       (change)="includeInfrequent = !includeInfrequent"
@@ -14,8 +14,9 @@
   <br />
   <div *ngIf="portfolio" fxLayout="row wrap" fxLayoutGap="10px">
     <skill-card
-      fxFlex="30"
+      fxFlex.xl="15"
       fxFlex.lg="20"
+      fxFlex.md="20"
       fxFlex.sm="45"
       fxFlex.xs="100"
       *ngFor="let skill of portfolio"

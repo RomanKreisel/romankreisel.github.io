@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { firstValueFrom } from 'rxjs';
 import { Portfolio, Skill } from 'src/generated';
 import { SkillHelper } from '../skill-helper';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'skill-portfolio',
@@ -14,7 +15,10 @@ export class SkillPortfolioComponent implements OnInit {
   includePersonal = true;
   includeInfrequent = true;
 
-  constructor(private httpClient: HttpClient) {}
+  constructor(
+    private httpClient: HttpClient,
+    private translationService: TranslateService
+    ) {}
 
   async ngOnInit() {
     this.portfolioUnfiltered = await firstValueFrom(
@@ -50,6 +54,6 @@ export class SkillPortfolioComponent implements OnInit {
   }
 
   getSkillHelper(skill: Skill) {
-    return new SkillHelper(skill);
+    return new SkillHelper(skill, this.translationService.currentLang);
   }
 }
