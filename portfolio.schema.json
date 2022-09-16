@@ -1,0 +1,168 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "$id": "http://example.com/example.json",
+  "title": "Portfolio",
+  "type": "array",
+  "default": [],
+  "items": {
+    "title": "Skill",
+    "type": "object",
+    "default": {},
+    "required": [
+      "title",
+      "category",
+      "importance",
+      "logo",
+      "experiences",
+      "selfEvaluation"
+    ],
+    "properties": {
+      "title": {
+        "title": "Title",
+        "type": "string",
+        "default": "",
+        "examples": ["Angular"]
+      },
+      "category": {
+        "title": "Category",
+        "type": "string",
+        "enum": ["Technical", "Management"],
+        "default": "",
+        "examples": ["Technical"]
+      },
+      "importance": {
+        "title": "Importance",
+        "type": "integer",
+        "minimum": 0,
+        "exclusiveMaximum": 10,
+        "default": 5,
+        "examples": [5]
+      },
+      "url": {
+        "title": "URL",
+        "type": "string",
+        "format": "uri",
+        "default": "",
+        "examples": ["https://angular.io"]
+      },
+      "logo": {
+        "title": "Logo",
+        "type": "string",
+        "examples": ["/assets/angular.png"]
+      },
+      "experiences": {
+        "title": "Experiences",
+        "type": "array",
+        "default": [],
+        "items": {
+          "title": "Experience",
+          "type": "object",
+          "default": {},
+          "required": ["from", "frequency"],
+          "properties": {
+            "from": {
+              "title": "FromDate",
+              "type": "string",
+              "format": "date",
+              "default": "",
+              "examples": ["2015-01-01"]
+            },
+            "to": {
+              "title": "ToDate",
+              "type": "string",
+              "format": "date",
+              "default": "",
+              "examples": ["2017-12-31"]
+            },
+            "comment": {
+              "title": "Comment",
+              "type": "string",
+              "default": "",
+              "examples": ["Used inside large distributed architecture"]
+            },
+            "personal": {
+              "title": "IsPersonalExperience",
+              "type": "boolean",
+              "default": false,
+              "examples": [false]
+            },
+            "business": {
+              "title": "IsBusinessExperience",
+              "type": "boolean",
+              "default": false,
+              "examples": [true]
+            },
+            "training": {
+              "title": "IsTrainingExperience",
+              "type": "boolean",
+              "default": false,
+              "examples": [false]
+            },
+            "frequency": {
+              "title": "Frequency",
+              "type": "string",
+              "enum": ["infrequently", "occasionally", "regularly"]
+            }
+          },
+          "examples": [
+            {
+              "from": "2015-01-01",
+              "to": "2017-12-31",
+              "personal": false,
+              "business": true
+            }
+          ]
+        },
+        "examples": [
+          [
+            {
+              "from": "2015-01-01",
+              "to": "2017-12-31",
+              "personal": false,
+              "business": true
+            }
+          ]
+        ]
+      },
+      "selfEvaluation": {
+        "title": "SelfEvaluation",
+        "type": "string",
+        "enum": ["Professional", "Intermediate", "Beginner"],
+        "default": "",
+        "examples": ["Professional"]
+      }
+    },
+    "examples": [
+      {
+        "title": "Angular",
+        "url": "https://angular.io",
+        "experiences": [
+          {
+            "from": "2015-01-01",
+            "to": "2017-12-31",
+            "personal": false,
+            "business": true
+          }
+        ],
+        "selfEvaluation": "Professional"
+      }
+    ]
+  },
+  "examples": [
+    [
+      {
+        "title": "Angular",
+        "url": "https://angular.io",
+        "experiences": [
+          {
+            "from": "2015-01-01",
+            "to": "2017-12-31",
+            "personal": false,
+            "business": true
+          }
+        ],
+        "selfEvaluation": "Professional"
+      }
+    ]
+  ]
+}

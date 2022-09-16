@@ -1,0 +1,22 @@
+<div fxFlex fxLayout="column">
+  <div id="portfolio-filters">
+    <mat-slide-toggle
+      (change)="includePersonal = !includePersonal"
+      [checked]="includePersonal"
+      >Include experience from personal projects</mat-slide-toggle
+    >
+    <mat-slide-toggle
+      (change)="includeInfrequent = !includeInfrequent"
+      [checked]="includeInfrequent"
+      >Include skills, that have only infrequently been used</mat-slide-toggle
+    >
+  </div>
+  <br />
+  <div
+    *ngIf="portfolio"
+    fxFlex="10"
+    fxLayout="row wrap"
+    fxLayoutGap="10px"
+    style="padding: 5px"
+  ></div>
+</div>

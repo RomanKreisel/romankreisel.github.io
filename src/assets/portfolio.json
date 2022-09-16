@@ -1,0 +1,54 @@
+[
+  {
+    "title": "Angular",
+    "category": "Technical",
+    "importance": 7,
+    "url": "https://angular.io",
+    "logo": "/assets/angular.png",
+    "experiences": [
+      {
+        "from": "2015-01-01",
+        "to": "2017-12-31",
+        "business": true,
+        "frequency": "regularly"
+      }
+    ],
+    "selfEvaluation": "Professional"
+  },
+  {
+    "title": "C#",
+    "category": "Technical",
+    "importance": 8,
+    "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
+    "logo": "/assets/csharp.svg",
+    "experiences": [
+      {
+        "from": "2007-03-01",
+        "to": "2007-06-30",
+        "training": true,
+        "frequency": "regularly"
+      },
+      {
+        "from": "2018-01-01",
+        "business": true,
+        "frequency": "regularly"
+      }
+    ],
+    "selfEvaluation": "Professional"
+  },
+  {
+    "title": "Terraform",
+    "category": "Technical",
+    "importance": 3,
+    "url": "https://www.terraform.io",
+    "logo": "/assets/terraform.svg",
+    "experiences": [
+      {
+        "from": "2018-03-01",
+        "business": true,
+        "frequency": "occasionally"
+      }
+    ],
+    "selfEvaluation": "Professional"
+  }
+]

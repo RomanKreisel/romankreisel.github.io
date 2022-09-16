@@ -1,0 +1,33 @@
+<mat-card
+  fxFlex="25"
+  *ngFor="let skill of portfolio"
+  class="skill-card"
+  id="portfolio-skill-{{ skillService.encodeForElementId(skill.title) }}"
+>
+  <mat-card-header>
+    <div mat-card-avatar class="skill-logo-avatar">
+      <img mat-card-avatar [src]="skill.logo" />
+    </div>
+    <mat-card-title>{{ skill.title }}</mat-card-title>
+    <mat-card-subtitle
+      >Experience: ~{{
+        skillService.totalExperienceHumanized(skill)
+      }}</mat-card-subtitle
+    >
+  </mat-card-header>
+
+  <mat-card-content>
+    <div>
+      This is some sample text, preferable across multiple lines. Lorem ipsum
+      dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
+      invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At
+      vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
+      gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
+      ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+      tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
+      voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+      clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
+      amet.
+    </div>
+  </mat-card-content>
+</mat-card>
