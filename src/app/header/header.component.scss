@@ -3,12 +3,11 @@
   position: fixed;
   width: 100%;
   z-index: 999;
-  height: 110px;
-  transition: .3s;
+  transition: max-height .3s;
 }
 
 .header-large {
-  height: 300px;
+  max-height: 300px;
 }
 
 .header-placeholder {
@@ -24,7 +23,7 @@
 }
 
 .profile-picture {
-  margin: 10px;
+  margin: 15px;
   height: 200px;
   width: 200px;
   border-radius:50%;
@@ -34,7 +33,6 @@
 }
 
 .profile-picture-small {
-  margin: 15px;
   height: 75px;
   width: 75px;
   border-radius:50%;
