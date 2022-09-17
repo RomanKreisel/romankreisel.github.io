@@ -1,0 +1,28 @@
+<div>
+  <div
+    fxFlex
+    [fxLayout]="isSmallHeader ? 'row' : 'row'"
+    fxLayout.lt-md="column"
+    class="header"
+    [class.header-small]="isSmallHeader"
+  >
+    <div fxFlex="30" fxFlex.lt-md="100" class="profile-picture-frame">
+      <img
+        src="/assets/roman.webp"
+        class="profile-picture"
+        [class.profile-picture-small]="isSmallHeader"
+      />
+    </div>
+    <div
+      fxFlex="70"
+      fxFlex.lt-md="100"
+      class="bio"
+      ngClass.lt-md="bio-centered"
+      [class.bio-small]="isSmallHeader"
+    >
+      Roman Kreisel<br />
+      Cloud Software Engineer & Scrum Master
+    </div>
+  </div>
+  <div class="header-placeholder"></div>
+</div>

@@ -3,7 +3,9 @@
     <mat-slide-toggle
       (change)="includePersonal = !includePersonal"
       [checked]="includePersonal"
-      >{{"skill-portfolio.includePersonalExperience" | translate}}</mat-slide-toggle
+      >{{
+        "skill-portfolio.includePersonalExperience" | translate
+      }}</mat-slide-toggle
     >
     <mat-slide-toggle
       (change)="includeInfrequent = !includeInfrequent"

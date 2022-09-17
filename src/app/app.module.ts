@@ -14,6 +14,7 @@ import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import { firstValueFrom } from 'rxjs';
 import { AppConstants } from './app-constants';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -45,7 +46,7 @@ export function appInitializerFactory(translate: TranslateService) {
 }
 
 @NgModule({
-  declarations: [AppComponent, SkillPortfolioComponent, SkillCardComponent],
+  declarations: [AppComponent, SkillPortfolioComponent, SkillCardComponent, HeaderComponent],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,

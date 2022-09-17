@@ -1,0 +1,59 @@
+.header {
+  background-color: burlywood;
+  position: fixed;
+  height: 300px;
+  width: 100%;
+  z-index: 999;
+}
+
+.header-small {
+  height: unset;
+}
+
+.header-placeholder {
+  height: 300px;
+  width: 100%;
+}
+
+.profile-picture-frame {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-picture {
+  margin: 10px;
+  height: 200px;
+  width: 200px;
+  border-radius:50%;
+  object-fit: cover;
+  justify-content: center;
+  transition: 1s
+}
+
+.profile-picture-small {
+  margin: 3px;
+  height: 50px;
+  width: 50px;
+  border-radius:50%;
+  object-fit: cover;
+  justify-content: center;
+}
+
+.bio {
+  margin: 10px;
+  font-weight: bold;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: large;
+  display: flex;
+  align-items: center;
+}
+
+.bio-centered {
+  justify-content: center;
+}
+
+.bio-small {
+  justify-content: center;
+}
