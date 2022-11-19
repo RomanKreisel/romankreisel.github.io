@@ -18,9 +18,16 @@
       fxFlex.lt-md="100"
       class="bio"
       ngClass.lt-md="bio-centered"
+      fxFlex
+      fxLayout="column"
     >
       Roman Kreisel<br />
-      Cloud Software Engineer & Scrum Master
+      <div *ngIf="isSmallHeader" class="bio-short">
+        {{ "header.bio-short" | translate }}
+      </div>
+      <div *ngIf="!isSmallHeader" class="bio-detailed">
+        {{ "header.bio-detailed" | translate }}
+      </div>
     </div>
   </div>
   <div class="header-placeholder"></div>
