@@ -15,7 +15,6 @@
       "descriptionGerman",
       "category",
       "importance",
-      "logo",
       "experiences",
       "selfEvaluation"
     ],
@@ -25,7 +24,8 @@
         "type": "string",
         "default": "",
         "examples": ["Angular"]
-      },      "titleGerman": {
+      },
+      "titleGerman": {
         "title": "TitleGerman",
         "type": "string",
         "default": "",
@@ -36,7 +36,8 @@
         "type": "string",
         "default": "",
         "examples": ["I've been born and raised in germany"]
-      },"descriptionGerman": {
+      },
+      "descriptionGerman": {
         "title": "DescriptionGerman",
         "type": "string",
         "default": "",
@@ -45,9 +46,9 @@
       "category": {
         "title": "Category",
         "type": "string",
-        "enum": ["Technical", "Management", "Language"],
+        "enum": ["Backend", "Frontend", "Tools", "Management", "Language"],
         "default": "",
-        "examples": ["Technical"]
+        "examples": ["Management"]
       },
       "importance": {
         "title": "Importance",
@@ -68,6 +69,11 @@
         "title": "Logo",
         "type": "string",
         "examples": ["/assets/angular.png"]
+      },
+      "logo-copyright": {
+        "title": "Logo source and/or copyright",
+        "type": "string",
+        "format": "uri"
       },
       "experiences": {
         "title": "Experiences",

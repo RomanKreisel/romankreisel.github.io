@@ -82,11 +82,10 @@
     "titleEnglish": "Windows",
     "titleGerman": "Windows",
     "descriptionEnglish": "I've literally seen every windows version since Windows 3.1.",
-    "descriptionGerman": "Seit Windows 3.1 habe ich jede Windows Version gesehen.",
-    "category": "Technical",
+    "descriptionGerman": "Seit Windows 3.1 habe - zumindest kurzzeitig - mit jeder Windows-Version gearbeitet.",
+    "category": "Tools",
     "importance": 5,
     "url": "https://en.wikipedia.org/wiki/Microsoft_Windows",
-    "logo": "/assets/windows-311.webp",
     "experiences": [
       {
         "from": "1995-01-01",
@@ -102,7 +101,7 @@
     "titleGerman": "Linux",
     "descriptionEnglish": "My passion for Linux started with SuSE Linux 7.1, I've been using it professionally and personally ever since.",
     "descriptionGerman": "Meine Vorliebe für Linux hat mit SuSE Linux 7.1 begonnen, seither verwende ich es professionell und privat.",
-    "category": "Technical",
+    "category": "Backend",
     "importance": 8,
     "url": "https://en.wikipedia.org/wiki/Linux",
     "logo": "/assets/tux.png",
@@ -146,10 +145,11 @@
     "titleGerman": "Angular",
     "descriptionEnglish": "I prefer SinglePageApps over MVC and Angular over React and Vue for most scenarios",
     "descriptionGerman": "Ich bevorzuge Single Page Apps vor MVC und Angular vor React und Vue für die meisten Anforderungen.",
-    "category": "Technical",
+    "category": "Frontend",
     "importance": 7,
     "url": "https://angular.io",
     "logo": "/assets/angular.png",
+    "logo-copyright": "http://web.archive.org/web/20221003195552/https://angular.io/presskit",
     "experiences": [
       {
         "from": "2015-01-01",
@@ -179,10 +179,11 @@
     "titleGerman": "C#",
     "descriptionEnglish": "While I was focusing Java in the beginning of my career, the ongoing evolution of C# and the decision of MS to support Linux as platform lead me here.",
     "descriptionGerman": "Zu Beginn meiner Karriere habe ich mich auf Java fokussiert, jedoch hat mich die stetig anhaltende Evolution von C# und Microsoft's Entscheidung auch Linux als Plattform zu akzeptieren hierher geführt.",
-    "category": "Technical",
+    "category": "Backend",
     "importance": 8,
     "url": "https://en.wikipedia.org/wiki/C_Sharp_(programming_language)",
     "logo": "/assets/csharp.svg",
+    "logo-copyright": "http://web.archive.org/web/20221003195108/https://en.wikipedia.org/wiki/C_Sharp_%28programming_language%29",
     "experiences": [
       {
         "from": "2007-03-01",
@@ -203,10 +204,9 @@
     "titleGerman": "Terraform",
     "descriptionEnglish": "Infrastucture as code is mandatory for professional cloud projects. It doesn't only increase development velocity, but also ensures stable deployments to production and high maintainability if some key subjects leave the project.",
     "descriptionGerman": "Infrastructure-as-code ist für professionelle Cloud Projekte zwingend erforderlich. Es beschleunigt nicht nur die Entwicklung, sondern stellt auch zuverlässige Rollouts sicher und erhält die Wartbarkeit wenn einige Key Player das Projekt verlassen.",
-    "category": "Technical",
+    "category": "Backend",
     "importance": 3,
     "url": "https://www.terraform.io",
-    "logo": "/assets/terraform.svg",
     "experiences": [
       {
         "from": "2018-03-01",

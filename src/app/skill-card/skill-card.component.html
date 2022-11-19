@@ -4,12 +4,14 @@
 >
   <mat-card-header class="text-ellipsis">
     <div mat-card-avatar class="skill-logo-avatar">
-      <img mat-card-avatar [src]="skill.logo" />
+      <img *ngIf="skill.logo" mat-card-avatar [src]="skill.logo" />
+      <img *ngIf="!skill.logo" mat-card-avatar src="/assets/generic.png" />
     </div>
-    <mat-card-title class="text-ellipsis">{{ skillHelper.title }}</mat-card-title>
-    <mat-card-subtitle class="text-ellipsis"
-      >
-      {{skill.selfEvaluation}}<br/>
+    <mat-card-title class="text-ellipsis">{{
+      skillHelper.title
+    }}</mat-card-title>
+    <mat-card-subtitle class="text-ellipsis">
+      {{ skill.selfEvaluation }}<br />
       Experience: ~{{
         skillHelper.totalExperienceHumanized()
       }}</mat-card-subtitle
